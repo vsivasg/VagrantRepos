@@ -19,6 +19,12 @@
     - name: reconfigure stupid dash
       command: dpkg-reconfigure -f noninteractive dash
 
+    - name: apt-get update apt-get dist-upgrade
+      command: apt-get update
+ 
+    - name: apt-get dist-upgrade
+      command: apt-get dist-upgrade
+
   handlers:
 
 - include: swap_playbook.yml
